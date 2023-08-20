@@ -14,8 +14,6 @@ namespace Ejercicio_Seccion17.Services
             _contextDB = contextDB;
         }
 
-
-
         public void AddProfesor(Profesor profesor)
         {
             _contextDB.Profesor.Add(profesor);
