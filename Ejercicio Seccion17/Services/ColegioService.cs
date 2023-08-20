@@ -28,6 +28,7 @@ namespace Ejercicio_Seccion17.Services
                 _contextDB.Colegio.Remove(colegio);
                 _contextDB.SaveChanges();
             }
+
         }
 
         public void DeleteColegio(Colegio colegio)
