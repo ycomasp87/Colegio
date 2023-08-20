@@ -20,9 +20,9 @@ namespace Ejercicio_Seccion17.Services
             _contextDB.SaveChanges();
         }
 
-        public void DeleteProfesor(int profesorId)
+        public void DeleteProfesor(int profesorID)
         {
-            var profesor = GetProfesor(profesorId);
+            var profesor = GetProfesor(profesorID);
             _contextDB.Profesor.Remove(profesor);
             _contextDB.SaveChanges();
         }
