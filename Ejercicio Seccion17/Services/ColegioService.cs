@@ -48,6 +48,7 @@ namespace Ejercicio_Seccion17.Services
 
         public Colegio UpdateColegio(Colegio colegio)
         {
+
             var colegioAux = _contextDB.Colegio.Update(colegio).Entity;
             _contextDB.SaveChanges();
             return colegioAux;
