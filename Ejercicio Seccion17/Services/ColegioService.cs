@@ -41,9 +41,9 @@ namespace Ejercicio_Seccion17.Services
             return _contextDB.Colegio.Select(x => x).ToList();
         }
 
-        public Colegio GetColegio(int colegioId)
+        public Colegio GetColegio(int colegioID)
         {
-            return _contextDB.Colegio.Where(x => x.ColegioId == colegioId).FirstOrDefault();
+            return _contextDB.Colegio.Where(x => x.ColegioId == colegioID).FirstOrDefault();
         }
 
         public Colegio UpdateColegio(Colegio colegio)
