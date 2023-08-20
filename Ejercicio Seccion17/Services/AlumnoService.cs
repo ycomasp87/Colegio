@@ -9,9 +9,9 @@ namespace Ejercicio_Seccion17.Services
     {
         private readonly IContextDB _contextDB;
 
-        public AlumnoService(IContextDB contextDB)
+        public AlumnoService(IContextDB ContextDB)
         {
-            _contextDB = contextDB;
+            _contextDB = ContextDB;
         }
 
         public void AddAlumno(Alumno alumno)
