@@ -38,6 +38,7 @@ namespace Ejercicio_Seccion17.Services
 
         public List<Colegio> GetColegios()
         {
+
             return _contextDB.Colegio.Select(x => x).ToList();
         }
 
@@ -48,7 +49,6 @@ namespace Ejercicio_Seccion17.Services
 
         public Colegio UpdateColegio(Colegio colegio)
         {
-
             var colegioAux = _contextDB.Colegio.Update(colegio).Entity;
             _contextDB.SaveChanges();
             return colegioAux;
