@@ -33,13 +33,17 @@ namespace Ejercicio_Seccion17.Services
 
         public void DeleteColegio(Colegio colegio)
         {
+
             _contextDB.Colegio.Remove(colegio);
             _contextDB.SaveChanges();
+
         }
 
         public List<Colegio> GetColegios()
         {
+
             return _contextDB.Colegio.Select(x => x).ToList();
+
         }
 
         public Colegio GetColegio(int colegioID)
@@ -49,7 +53,6 @@ namespace Ejercicio_Seccion17.Services
 
         public Colegio UpdateColegio(Colegio colegio)
         {
-
             var colegioAux = _contextDB.Colegio.Update(colegio).Entity;
             _contextDB.SaveChanges();
             return colegioAux;

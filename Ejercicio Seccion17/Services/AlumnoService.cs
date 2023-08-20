@@ -24,6 +24,7 @@ namespace Ejercicio_Seccion17.Services
 
         public void DeleteAlumno(int alumnoId)
         {
+
             var alumno = GetAlumno(alumnoId);
             if (alumno != null)
             {
